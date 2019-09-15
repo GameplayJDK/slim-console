@@ -59,6 +59,12 @@ $app->get('/cli/some-command', \App\Controller\CliController::class . ':someComm
 // ...
 ```
 
+Call that action from the console:
+
+```bash
+php app.php cli some-command 
+```
+
 ## License
 
 The [MIT license](https://choosealicense.com/licenses/mit/).
