@@ -38,6 +38,7 @@ class DirectArgvParser implements ArgvParserInterface
     public function parse(array $argv): string
     {
         array_shift($argv);
+        array_unshift($argv, '');
 
         return implode('/', $argv);
     }
